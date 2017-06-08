@@ -41,8 +41,12 @@
       <li
         class="list-group-item"
         *ngFor="let ingredient of recipe.ingredients">
-        {{ ingredient.name }} - {{ ingredient.amount }}
+        {{ ingredient.name }} - {{ ingredient.amount }} - {{ ingredient.cost }} zł
       </li>
     </ul>
+
+    <div>
+      Total: {{ onCalculateCost()}} zł
+    </div>
   </div>
 </div>
